@@ -1,0 +1,7 @@
+node_modules/
+npm-debug.log*
+*.log
+.DS_Store
+.env
+*.muse-github-snapshot-sync.json
+*.muse-github-snapshot-sync.json.tmp-*

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>排列三 福彩3D 排列五分析预测</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>排列三 · 福彩3D · 排列五 分析预测</h1>
+  <p class="sub">数据源：新浪彩票走势图 · 每天 22:00 开奖后自动刷新：抓取当天开奖、存档并复盘当天预测、生成次日预测，也可手动刷新</p>
+  <p class="warn">理性购彩提示：开奖为独立随机事件，本页所有预测仅供走势统计参考，不保证命中，请量力而行。</p>
+</header>
+
+<nav class="tabs" id="lotteryTabs">
+  <button data-type="p3" class="active">排列三</button>
+  <button data-type="3d">福彩3D</button>
+  <button data-type="p5">排列五</button>
+  <span class="spacer"></span>
+  <button id="refreshBtn">刷新数据</button>
+</nav>
+<nav class="tabs secondary" id="viewTabs">
+  <button data-view="today" class="active">当日预测</button>
+  <button data-view="history">历史预测</button>
+</nav>
+
+<main id="app"><p class="loading">加载中…</p></main>
+
+<section class="card">
+  <h2>计划表交叉预测（补充参考）</h2>
+  <p class="hint">粘贴计划表文本，或选择 CSV/TXT 文件上传。解析其推荐号 / 胆码 / 杀号后与主模型交叉：重合的出交叉精选，撞杀号的标风险。<strong>计划表仅作参考，不绝对正确。</strong></p>
+  <textarea id="planText" rows="6" placeholder="例如：&#10;直选：830 689 125 307&#10;胆码：8 3&#10;杀号：4 7"></textarea>
+  <div class="row">
+    <input type="file" id="planFile" accept=".csv,.txt">
+    <button id="planBtn">做交叉预测</button>
+  </div>
+  <div id="planResult"></div>
+</section>
+
+<footer><p class="warn">再次提醒：彩票开奖独立随机，历史走势不构成对未来结果的保证。请理性购彩。</p></footer>
+<script src="app.js"></script>
+</body>
+</html>
